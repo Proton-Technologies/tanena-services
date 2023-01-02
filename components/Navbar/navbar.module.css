@@ -1,0 +1,26 @@
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.open {
+    top: 64px;
+    left: 0;
+    width: 100%;
+    display: flex !important;
+}
+
+@media screen and (max-width: 768px){
+    .links {
+        position: absolute;
+        display: none;
+        background: white;
+        flex-direction: column;
+        z-index: 999;
+    }
+
+    .links li {
+        height: 20px;
+    }
+}
