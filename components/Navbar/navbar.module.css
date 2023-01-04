@@ -4,6 +4,28 @@
     justify-content: space-between;
 }
 
+.links li:hover::after {
+    content: '';
+    border: 2px solid var(--primary);
+    height: 2px;
+    width: 100%;
+    border-radius: 20px;
+    transition: 0.5s ease-in;
+}
+
+.links .active::after {
+    content: '';
+    border: 2px solid var(--primary);
+    height: 2px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.links li {
+    display: flex;
+    flex-direction: column;
+}
+
 .open {
     top: 64px;
     left: 0;
@@ -15,12 +37,12 @@
     .links {
         position: absolute;
         display: none;
-        background: white;
+        background: var(--background);
         flex-direction: column;
-        z-index: 999;
+        z-index: 300;
     }
 
     .links li {
-        height: 20px;
+        height: 30px;
     }
 }
