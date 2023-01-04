@@ -131,11 +131,6 @@ const Home: NextPage = () => {
         </div>
 
       </section>
-
-      <Modal isOpen={true}>
-        hello
-      </Modal>
-
     </main>
   )
 }
