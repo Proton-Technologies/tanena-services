@@ -10,10 +10,10 @@ export const Navbar: React.FC<{ currentPage: Link }> = ({ currentPage }) => {
     const router = useRouter();
     
     return(
-        <nav className="px-3 h-16 flex items-center relative w-full justify-between bg-background text-primary">
+        <nav className="px-3 h-16 flex items-center w-full justify-between bg-background text-primary">
             <div className="flex items-center">
                 <Image priority={true} width={50} height={60} src="/tanena-logo-1.png" alt="Tanena Logo"/>
-                <h1 className="font-medium font-mono text-xl">TANENA SERVICES NIGERIA</h1>
+                <h1 className="font-medium hidden md:block font-mono text-xl">TANENA SERVICES NIGERIA</h1>
             </div>
             <ul className={`${styles.links} ${menuOpen ? styles.open : null} w-1/3`}>
                 <li className={`${currentPage === 'home' ? styles.active : null}`}>
