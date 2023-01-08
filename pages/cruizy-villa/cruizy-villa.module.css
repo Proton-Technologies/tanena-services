@@ -1,0 +1,11 @@
+
+@media screen and (min-width: 768px) {
+    .introSection {
+        padding: 8px 16px;
+        background-position: center;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        background: linear-gradient(0deg, #22222398 50%, #222223) ,url("../../public/images/tanena-backdrop.jpg");
+    }
+    
+}
