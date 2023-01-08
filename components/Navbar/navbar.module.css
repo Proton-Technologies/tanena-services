@@ -27,22 +27,24 @@
 }
 
 .open {
-    top: 64px;
     left: 0;
+    bottom: 0;
     width: 100%;
     display: flex !important;
 }
 
 @media screen and (max-width: 768px){
     .links {
-        position: absolute;
+        position: fixed;
         display: none;
         background: var(--background);
         flex-direction: column;
         z-index: 300;
+        box-shadow: 0 -0.3px 7px 1px #79797985;
     }
 
     .links li {
-        height: 30px;
+        height: 50px;
+        justify-content: center;
     }
 }
