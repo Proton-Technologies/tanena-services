@@ -10,9 +10,12 @@ import { MdArrowForward } from 'react-icons/md';
 import { Navbar } from '../components/Navbar'
 import { SectionTitle } from '../components/SectionTitle'
 import { Modal } from '../components/Modal'
+import { Footer } from '../components/Footer'
 
 const Home: NextPage = () => {
   return (
+    <>
+    
     <main>
       <Head>
         <title>Create Next App</title>
@@ -131,7 +134,24 @@ const Home: NextPage = () => {
         </div>
 
       </section>
+
+      <section>
+        <h2>Discover who we are</h2>
+        <p>
+          For shipping and storage of product, our processing systems provide customers with the utmost confidence:
+
+          Fully bonded warehouse capable of storing c16500 pallets
+          Mix of block stack & racked capacity
+          Experienced customer service team
+          We are currently the only Nigerian supplier to offer 24 hour warehouse cover with 7 day order processing
+          Full Load transport provision with flexibility to accommodate peaks in demand with day 1 for day 2 order processing for key volume customers
+          Part Load transport capability with national reach
+        </p>
+      </section>
     </main>
+    <Footer/>
+    
+    </>
   )
 }
 
