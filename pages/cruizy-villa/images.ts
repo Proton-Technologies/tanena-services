@@ -7,4 +7,4 @@ export const IMAGES = [
     "/images/tanena-backdrop.jpg",
     "/images/tanena-main.jpg",
 
-] as const;
+];
