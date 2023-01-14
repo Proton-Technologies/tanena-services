@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { useState } from "react"
-import { MdMenu } from "react-icons/md";
+import { RiMenu3Fill } from "react-icons/ri";
 import styles from "./navbar.module.css"
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 type Link = 'home'|'warehouse'|'hostel'|'services'|'contact'
 export const Navbar: React.FC<{ currentPage: Link }> = ({ currentPage }) => {
@@ -17,22 +18,22 @@ export const Navbar: React.FC<{ currentPage: Link }> = ({ currentPage }) => {
             </div>
             <ul className={`${styles.links} ${menuOpen ? styles.open : null} w-1/3`}>
                 <li className={`${currentPage === 'home' ? styles.active : null}`}>
-                    Home
+                    <Link href={'/'}>Home</Link>
                 </li>
                 <li className={`${currentPage === 'warehouse' ? styles.active : null}`}>
-                    Warehouse
+                    <Link href={'/'}>Warehouse</Link>  
                 </li>
                 <li className={`${currentPage === 'hostel' ? styles.active : null}`}>
-                    Hostel
+                <Link href={'/cruizy-villa'}>Hostel</Link>
                 </li>
                 <li className={`${currentPage === 'services' ? styles.active : null}`}>
-                    Services
+                    <Link href={'/services'}>Services</Link>
                 </li>
                 <li className={`${currentPage === 'contact' ? styles.active : null}`}>
-                    Contact Us
+                    <Link href={'/contact-us'}>Contact Us</Link>
                 </li>
             </ul>
-            <MdMenu onClick={() => setMenuOpen(!menuOpen)} className="md:hidden"/>
+            <RiMenu3Fill onClick={() => setMenuOpen(!menuOpen)} className="md:hidden"/>
         </nav>
     )
 }
