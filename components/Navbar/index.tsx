@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useState } from "react"
 import { MdMenu } from "react-icons/md";
 import styles from "./navbar.module.css"
-import { useRouter } from "next/router";
+import { useRouter } from "next/router";5
 
 type Link = 'home'|'warehouse'|'hostel'|'services'|'contact'
 export const Navbar: React.FC<{ currentPage: Link }> = ({ currentPage }) => {

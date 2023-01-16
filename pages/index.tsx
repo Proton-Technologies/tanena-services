@@ -125,7 +125,7 @@ const Home: NextPage = () => {
       <section className='flex justify-between w-full'>
         <img className='w-2/5' src="/images/delivery-illustration.svg" alt='fast delivery'/>
         <div>
-          <h2>FAST DELIVERY ASSURED</h2>
+        <h2>FAST DELIVERY ASSURED</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quisquam vel
             aliquam harum eum non consectetur excepturi sit praesentium doloribus
