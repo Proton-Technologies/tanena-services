@@ -7,4 +7,4 @@ export const FAQ = [
         question: "Do the hostels have a central bathroom?",
         answer: `No they do not`
     }
-] as const;
+];
