@@ -6,8 +6,8 @@ import Image from "next/image";
 import { MdArrowDownward, MdLocationPin } from "react-icons/md";
 import { IoHomeSharp, IoDiceSharp, IoTvSharp, IoFlashSharp, IoWaterSharp } from "react-icons/io5";
 
-import IMAGES from "./images";
-import FAQ from "./faq";
+import IMAGES from "../../services/images";
+import FAQ from "../../services/faq";
 
 import { Button } from "../../components/Button";
 import { FrequentlyAskedQuestion } from "../../components/FAQ";
