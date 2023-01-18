@@ -1,20 +1,26 @@
+import { useState } from "react";
 import { NextPage } from "next";
-import { Navbar } from "../../components/Navbar";
-import { MdArrowDownward, MdLocationPin } from "react-icons/md";
-import { Button } from "../../components/Button";
 import Head from "next/head";
 import Image from "next/image";
-import { IMAGES } from "./images";
+
+import { MdArrowDownward, MdLocationPin } from "react-icons/md";
 import { IoHomeSharp, IoDiceSharp, IoTvSharp, IoFlashSharp, IoWaterSharp } from "react-icons/io5";
+
+import IMAGES from "./images";
+import FAQ from "./faq";
+
+import { Button } from "../../components/Button";
 import { FrequentlyAskedQuestion } from "../../components/FAQ";
-import { FAQ } from "./faq";
+import { Navbar } from "../../components/Navbar";
 import { Footer } from "../../components/Footer";
 import { Modal } from "../../components/Modal";
-import { useState } from "react";
-import styles from "./cruizy-villa.module.css";
 import { Input } from "../../components/Input";
+import styles from "./cruizy-villa.module.css";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Scrollbar } from "swiper";
+
+
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/scrollbar";
