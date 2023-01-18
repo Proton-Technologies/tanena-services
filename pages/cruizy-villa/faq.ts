@@ -1,4 +1,4 @@
-export const FAQ = [
+const FAQ = [
     {
         question: "Does the hostel provide food?",
         answer: `yes they do`,
@@ -8,3 +8,5 @@ export const FAQ = [
         answer: `No they do not`
     }
 ];
+
+export default FAQ;

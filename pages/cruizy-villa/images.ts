@@ -1,4 +1,4 @@
-export const IMAGES = [
+const IMAGES = [
     "/images/tanena-1.jpg",
     "/images/tanena-2.jpg",
     "/images/tanena-4.jpg",
@@ -8,3 +8,5 @@ export const IMAGES = [
     "/images/tanena-main.jpg",
 
 ];
+
+export default IMAGES;
